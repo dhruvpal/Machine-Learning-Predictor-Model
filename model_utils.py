@@ -48,5 +48,5 @@ def predict_model(df):
     pipeline = joblib.load("pipeline.pkl")
     X_prepared = pipeline.transform(df)
     preds = model.predict(X_prepared)
-    df["Predicted_Price"] = preds
+    df["Predicted_Value"] = preds
     return df
