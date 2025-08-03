@@ -20,9 +20,9 @@ def load_file(uploaded_file):
         st.error("Unsupported file format. Please upload a CSV or Excel file.")
         return None
 
-# =======================
+# ======================
 # ✅ TRAINING SECTION
-# =======================
+# ======================
 if menu == "Train Model":
     st.header("🧠 Upload Training Dataset (CSV or Excel)")
     train_file = st.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"], key="train")
